@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Mostrar/Ocultar</title>
+</head>
+<body>
+
+    <p id="p1">
+        JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde la actualización de contenido multimedia hasta la animación de imágenes, JavaScript lo hace todo.
+    </p>
+
+    <!-- Estos dos párrafos empiezan ocultos -->
+    <p id="p2" style="display: none;">
+        Las aplicaciones web basadas en navegadores combinan código del lado del cliente y del lado del servidor para ofrecer experiencias enriquecidas a los usuarios.
+    </p>
+
+    <p id="p3" style="display: none;">
+        Con JavaScript, los desarrolladores pueden crear funcionalidades dinámicas como formularios de validación, mapas interactivos y gráficos animados.
+    </p>
+
+    <!-- Span interactivo ("cuando me pulsen, llama a la función mostrar y pásale este mismo span") -->
+    <span id="boton" onclick="mostrar(this);" style="color: blue; cursor: pointer; text-decoration: underline;">Mostrar más...</span>
+
+    <script src="ej6.js"></script>
+</body> 
+</html>
