@@ -1,0 +1,3 @@
+Usuario: profesor
+Sistema: Windows_NT
+CPUs: 12
