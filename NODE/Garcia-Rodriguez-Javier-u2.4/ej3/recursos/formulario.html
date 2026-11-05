@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libro de visitas</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    label { display: block; margin-top: 1rem; font-weight: 600; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; font: inherit; box-sizing: border-box; }
+    button { margin-top: 1rem; padding: 0.5rem 1.25rem; font: inherit; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Libro de visitas</h1>
+  <p>Firma con tu nombre y un mensaje (máximo 200 caracteres).</p>
+
+  <!-- Sin "required" a propósito: así se puede comprobar que la validación del servidor devuelve el 400 -->
+  <form method="POST" action="/firmar">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+    <button type="submit">Firmar</button>
+  </form>
+
+  <p><a href="/firmas">Ver todas las firmas (JSON)</a></p>
+</body>
+</html>
