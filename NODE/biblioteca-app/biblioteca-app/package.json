@@ -1,0 +1,17 @@
+{
+  "name": "biblioteca-app",
+  "version": "1.0.0",
+  "description": "Web de la biblioteca del instituto con Node.js, Express y EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.3.0"
+  }
+}

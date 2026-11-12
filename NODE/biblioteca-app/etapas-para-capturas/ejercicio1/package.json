@@ -1,0 +1,16 @@
+{
+  "name": "biblioteca-app",
+  "version": "1.0.0",
+  "description": "Web de la biblioteca del instituto (ejercicio 1: HTML fijo)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
