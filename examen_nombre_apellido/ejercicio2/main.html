@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Videojuegos clásicos</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Videojuegos clásicos</h1>
+  <p id="descripcion">Los videojuegos son una forma de ocio y de cultura.</p>
+  <img id="imagen" src="game1.jpg" alt="Videojuego clásico" width="300">
+  <button onclick="alternarImagen()">Alternar Imagen</button>
+
+  <h2>Citas</h2>
+  <ul id="citas">
+    <li>Pulsa start para empezar.</li>
+    <li>Una partida más y lo dejo.</li>
+  </ul>
+
+  <button onclick="cambiarDescripcion()">Cambiar Descripción</button>
+  <button onclick="anadirCita()">Añadir Cita</button>
+  <button onclick="eliminarUltimaCita()">Eliminar Última Cita</button>
+  <button onclick="resaltarUltimaCita()">Resaltar Última Cita</button>
+  <button onclick="anadirCitaAleatoria()">Añadir Cita Aleatoria</button>
+
+  <input type="text" id="nuevaCita" placeholder="Escribe una cita">
+  <button onclick="anadirCitaPersonalizada()">Añadir Cita Personalizada</button>
+</body>
+</html>
