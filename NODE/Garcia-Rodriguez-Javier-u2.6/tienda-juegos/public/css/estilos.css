@@ -1,0 +1,58 @@
+/* Va después de Bootstrap en la cabecera para poder sobrescribir sus colores */
+
+/* ===== Colores (cámbialos aquí para personalizar la web) ===== */
+:root {
+  --gz-oscuro: #1b1b2f;
+  --gz-oscuro-2: #12121f;
+  --gz-acento: #7c4dff;
+  --gz-fondo: #f4f4f9;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--gz-fondo);
+}
+
+main {
+  flex: 1;
+}
+
+/* ===== Cabecera y menú ===== */
+.barra-gamezone {
+  background: var(--gz-oscuro);
+  border-bottom: 4px solid var(--gz-acento);
+}
+
+.marca {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.marca:hover {
+  color: var(--gz-acento);
+}
+
+.barra-gamezone .btn-outline-light:hover {
+  background: var(--gz-acento);
+  border-color: var(--gz-acento);
+  color: #fff;
+}
+
+/* ===== Contenido ===== */
+h1 {
+  color: var(--gz-oscuro);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ===== Pie ===== */
+.pie-gamezone {
+  background: var(--gz-oscuro-2);
+  color: #c9c9dd;
+}

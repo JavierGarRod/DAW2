@@ -1,0 +1,17 @@
+{
+  "name": "tienda-juegos",
+  "version": "1.0.0",
+  "description": "Panel web de GameZone, tienda de videojuegos, con Express, EJS y express.Router",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "Javier García Rodríguez",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

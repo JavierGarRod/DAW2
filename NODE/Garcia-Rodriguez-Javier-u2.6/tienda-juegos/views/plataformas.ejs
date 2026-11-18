@@ -1,0 +1,28 @@
+<%- include('partials/cabecera') %>
+
+<h1><%= titulo %></h1>
+
+<% if (arrayPlataformas.length > 0) { %>
+  <table class="table table-striped align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Fabricante</th>
+        <th>Año</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% arrayPlataformas.forEach(plataforma => { %>
+        <tr>
+          <td><%= plataforma.nombre %></td>
+          <td><%= plataforma.fabricante %></td>
+          <td><%= plataforma.anio %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+<% } else { %>
+  <div class="alert alert-info">No hay plataformas en el catálogo</div>
+<% } %>
+
+<%- include('partials/pie') %>
